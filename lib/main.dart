@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:login_app/src/utils/theme/theme.dart';
 
+import 'src/features/authentication/screens/splash_screen/splash_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: const MyHomePage(),
+      home: SplashScreen(),
     );
   }
 }
@@ -31,33 +33,14 @@ class MyHomePage extends StatelessWidget {
         title: const Text("Login App Demo"),
         leading: const Icon(Icons.ondemand_video),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add_shopping_cart_outlined),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(20),
-        child: ListView(children: [
-          Text(
-            "Heading",
-            style: Theme.of(context).textTheme.headlineLarge,
-          ),
-          Text("Sub-heading", style: Theme.of(context).textTheme.headlineMedium),
-          Text("Paragraph", style: Theme.of(context).textTheme.bodyMedium),
-          ElevatedButton(
-            onPressed: () {},
-            child: const Text("Elevated Button"),
-          ),
-          OutlinedButton(
-            onPressed: () {},
-            child: const Text("Outlined Button"),
-          ),
-          const Padding(
-            padding: EdgeInsets.all(20),
-            child: Image(image: AssetImage("assets/images/s5.png")),
-          )
-        ]),
+     
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Text("Home Dashboard"),
+        ),
       ),
     );
   }
 }
+  
