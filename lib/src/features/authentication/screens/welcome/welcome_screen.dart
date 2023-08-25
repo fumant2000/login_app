@@ -5,6 +5,7 @@ import 'package:login_app/src/constants/colors.dart';
 import 'package:login_app/src/constants/image_strings.dart';
 import 'package:login_app/src/constants/sizes.dart';
 import 'package:login_app/src/constants/text_strings.dart';
+import 'package:login_app/src/features/authentication/screens/login/login_screen.dart';
 
 import '../../../../common_widgets/fade_in_animation/animation_design.dart';
 import '../../../../common_widgets/fade_in_animation/fade_in_animation_controller.dart';
@@ -65,13 +66,13 @@ class WelcomeScreen extends StatelessWidget {
                   children: [
                     Expanded(child: OutlinedButton(
                       
-                      onPressed: () {}, 
+                      onPressed: ()=>Get.to(()=>LoginScreen()), 
                       child: Text(tLogin.toUpperCase()))),
                     SizedBox(width: 13),
                     Expanded(
                       child: ElevatedButton(
                         onPressed: () {}, 
-                        child: Text(tSignUp.toUpperCase())))
+                        child: Text(tSignup.toUpperCase())))
                   ],
                 )
               ],

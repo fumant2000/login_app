@@ -1,8 +1,14 @@
+
 //---Generic text
+const String tNext = "Next";
 const String tLogin = "Login";
-const String tSignUp = "Signup";
-
-
+const String tEmail = "E-Mail";
+const String tSignup = "Signup";
+const String tPhoneNo = "Phone No";
+const String tPassword = "Password";
+const String tFullName = "Full Name";
+const String tForgetPassword = "Forget Password";
+const String tSignInWithGoogle = "Sign-In with Google";
 
 const String tAppName = ".appable";
 const String tAppTagLine = "Find JOB App \n by SEDS";
@@ -30,4 +36,16 @@ const String tOnBoardingCounter3 = "3/3";
 
 const String tWelcomeTitle = "Find's Job App";
 const String tWelcomeSubTiTle ="Let's Brag about you talents, craft apps";
+
+// -- Login Screen Text
+const String tLoginTitle = "Welcome Back,";
+const String tLoginSubTitle = "Make it work, make it right, make it fast.";
+const String tRememberMe = "Remember Me?";
+const String tDontHaveAnAccount = "Don't have an Account? ";
+
+// -- Sign Up Screen Text
+const String tSignUpTitle = "Get On Board!";
+const String tSignUpSubTitle = "Create your profile to start your Journey.";
+const String tAlreadyHaveAnAccount = "Already have an Account? ";
+
 
